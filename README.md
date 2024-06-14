@@ -1,7 +1,7 @@
 # **Tercer Fuego**
 
 ## Índice
-1. [Motivaciones](#Motivaciones)
+1. [Motivaciones](#motivaciones)
 2. [Objetivos](#objetivos-)
 3. [Tecnologías](#Tecnologías)
 
