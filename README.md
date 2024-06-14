@@ -3,7 +3,7 @@
 ## Índice
 1. [Motivaciones](#motivaciones)
 2. [Objetivos](#objetivos-)
-3. [Tecnologías](#Tecnologías)
+3. [Tecnologías](#tecnologías-%EF%B8%8F)
 
 
 # Motivaciones
