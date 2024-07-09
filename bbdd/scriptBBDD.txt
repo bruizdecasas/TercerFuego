@@ -1,0 +1,54 @@
+CREATE TABLE `tercer_fuego`.`categorias` (
+  `id_categorias` INT NOT NULL,
+  `nombre_categoria` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_categorias`))
+
+CREATE TABLE `tercer_fuego`.`subcategorias` (
+  `id_subcategorias` INT NOT NULL,
+  `nombre_subcategoria` VARCHAR(45) NOT NULL,
+  `id_categoria` INT NOT NULL,
+  PRIMARY KEY (`id_subcategorias`),
+  INDEX `id_categoria_idx` (`id_categoria` ASC) VISIBLE,
+  CONSTRAINT `id_categoria`
+    FOREIGN KEY (`id_categoria`)
+    REFERENCES `tercer_fuego`.`categorias` (`id_categorias`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+
+CREATE TABLE `tercer_fuego`.`tiendas` (
+  `id_tiendas` INT NOT NULL,
+  `nombre_tienda` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_tiendas`))
+
+CREATE TABLE `tercer_fuego`.`productos` (
+  `id_producto` INT NOT NULL,
+  `nombre_producto` VARCHAR(300) NOT NULL,
+  `precio` float NOT NULL,
+  `url` VARCHAR(100) NOT NULL,
+  `peso` VARCHAR(45) NULL,
+  `dimensiones` VARCHAR(45) NULL,
+  `chamota` TINYINT NULL,
+  `id_categoria` INT NOT NULL,
+  `id_subcategoria` INT NOT NULL,
+  `tipo` VARCHAR(45) NULL,
+  `id_tienda` INT NOT NULL,
+  PRIMARY KEY (`id_producto`),
+  INDEX `id_tienda_idx` (`id_tienda` ASC) VISIBLE,
+  INDEX `id_categoria_idx` (`id_categoria` ASC) VISIBLE,
+  INDEX `id_subcategoria_idx` (`id_subcategoria` ASC) VISIBLE,
+  CONSTRAINT `fk_id_tienda`
+    FOREIGN KEY (`id_tienda`)
+    REFERENCES `tercer_fuego`.`tiendas` (`id_tiendas`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_id_categoria`
+    FOREIGN KEY (`id_categoria`)
+    REFERENCES `tercer_fuego`.`categorias` (`id_categorias`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_id_subcategoria`
+    FOREIGN KEY (`id_subcategoria`)
+    REFERENCES `tercer_fuego`.`subcategorias` (`id_subcategorias`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+;
