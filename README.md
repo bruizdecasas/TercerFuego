@@ -4,7 +4,7 @@
 1. [Motivaciones](#motivaciones)
 2. [Objetivos](#objetivos-)
 3. [Tecnologías](#tecnologías-%EF%B8%8F)
-4. [Descripción de las columnas](#Descripción-de-las-columnas-💾)
+4. [Descripción de las columnas](#Descripción-de-las-columnas-)
 
 
 # Motivaciones
