@@ -4,6 +4,7 @@
 1. [Motivaciones](#motivaciones)
 2. [Objetivos](#objetivos-)
 3. [Tecnologías](#tecnologías-%EF%B8%8F)
+4. [Descripción de las columnas](#Descripción)
 
 
 # Motivaciones
@@ -40,3 +41,30 @@ La implementación de este proyecto proporcionará una herramienta valiosa para 
 **Jupyter Notebook:** Se utiliza para la exploración interactiva y análisis detallado de datos. Jupyter Notebook permite combinar código, visualizaciones y documentación en un solo documento, facilitando la colaboración y la comunicación de los resultados del análisis.
 
 **Git:** Herramienta crucial para el control de versiones del código fuente del proyecto. Git facilita la colaboración entre equipos de desarrollo, el seguimiento de cambios en el código y la gestión de ramas para el desarrollo simultáneo de funcionalidades.
+
+**MySQL:** Utilizado para la gestión de la base de datos, MySQL es un sistema de gestión de bases de datos relacional que permite almacenar, organizar y acceder a los datos de manera eficiente y segura. Es una herramienta clave para asegurar la integridad y disponibilidad de los datos recopilados y tratados.
+
+## Descripción de las columnas 💾
+**Categoría:** Esta columna incluye el grupo principal en el que se clasifican los productos. Las categorías agrupan productos con características o usos similares, facilitando la organización y búsqueda dentro del conjunto de datos. Ejemplos de categorías podrían ser "Arcillas", "Herramientas", "Equipos", etc. Cada categoría contiene varias subcategorías.
+
+**Subcategoría:** Proporciona un segundo nivel de clasificación dentro de las categorías principales. Las subcategorías ayudan a diferenciar los productos con más precisión. Por ejemplo, dentro de la categoría "Arcillas", las subcategorías podrían ser "Arcilla de baja temperatura" o "Arcilla de alta temperatura".
+
+**Nombre:** Esta columna contiene el nombre específico de cada producto. El nombre puede incluir características adicionales que describen el producto más detalladamente, como su color, forma, o cualquier otra especificación relevante. Por ejemplo, "Arcilla roja con chamota 5 kg".
+
+**Precio:* Representa el precio de cada producto. Esta columna es crucial para análisis de costo y para realizar comparaciones entre productos similares. Los precios están expresados en € e incluyen el IVA.
+
+**url:** Almacena la URL del sitio web donde se puede acceder directamente a la página del producto. Esta información es útil para verificar detalles adicionales del producto.
+
+**Tienda:** Indica la tienda o proveedor donde se puede encontrar cada producto. Esto puede incluir el nombre de tiendas físicas, tiendas en línea, o distribuidores específicos. Facilita el rastreo del origen de los productos.
+
+**Peso:** Incluye los diferentes pesos disponibles para los productos y sus unidades de medida (kilogramos - Kg, o gramos - gr). Esta información es vital para productos vendidos en diferentes tamaños y para análisis de cantidades disponibles.
+
+**Chamota:** Especifica si la arcilla tiene chamota o no. Esta columna es importante para ceramistas que necesitan especificaciones exactas del material.
+
+**Tipo:** Almacena el tipo de arcilla u otro material, proporcionando información adicional sobre la composición o uso del producto. Por ejemplo, puede diferenciar entre "Gres", "Porcelana", etc.
+
+**Capacidad:** Incluye los volúmenes disponibles para los productos y sus unidades de medida (litros - L, o mililitros - ml). Esto es relevante para productos líquidos o semi-líquidos y ayuda en el análisis de las cantidades disponibles. 
+
+**Tamaño:** Proporciona las dimensiones de los productos, ya sea unidimensionales (longitud), bidimensionales (superficie), o tridimensionales (volumen). Las unidades de medida pueden variar (centímetros - cm, metros - m, etc.). Esta información es crucial para productos cuya funcionalidad depende de su tamaño específico.
+
+
