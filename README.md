@@ -4,7 +4,7 @@
 1. [Motivaciones](#motivaciones)
 2. [Objetivos](#objetivos-)
 3. [Tecnologías](#tecnologías-%EF%B8%8F)
-4. [Descripción de las columnas](#Descripción-de-las-columnas-)
+4. [Descripción de las columnas](#descripcion)
 
 
 # Motivaciones
@@ -44,6 +44,7 @@ La implementación de este proyecto proporcionará una herramienta valiosa para 
 
 **MySQL:** Utilizado para la gestión de la base de datos, MySQL es un sistema de gestión de bases de datos relacional que permite almacenar, organizar y acceder a los datos de manera eficiente y segura. Es una herramienta clave para asegurar la integridad y disponibilidad de los datos recopilados y tratados.
 
+<a id="descripcion"></a>
 ## Descripción de las columnas 💾
 **Categoría:** Esta columna incluye el grupo principal en el que se clasifican los productos. Las categorías agrupan productos con características o usos similares, facilitando la organización y búsqueda dentro del conjunto de datos. Ejemplos de categorías podrían ser "Arcillas", "Herramientas", "Equipos", etc. Cada categoría contiene varias subcategorías.
 
