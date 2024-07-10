@@ -4,7 +4,7 @@
 1. [Motivaciones](#motivaciones)
 2. [Objetivos](#objetivos-)
 3. [Tecnologías](#tecnologías-%EF%B8%8F)
-4. [Descripción de las columnas](#Descripción)
+4. [Descripción de las columnas](#Descripción-de-las-columnas-💾)
 
 
 # Motivaciones
@@ -51,7 +51,7 @@ La implementación de este proyecto proporcionará una herramienta valiosa para 
 
 **Nombre:** Esta columna contiene el nombre específico de cada producto. El nombre puede incluir características adicionales que describen el producto más detalladamente, como su color, forma, o cualquier otra especificación relevante. Por ejemplo, "Arcilla roja con chamota 5 kg".
 
-**Precio:* Representa el precio de cada producto. Esta columna es crucial para análisis de costo y para realizar comparaciones entre productos similares. Los precios están expresados en € e incluyen el IVA.
+**Precio:** Representa el precio de cada producto. Esta columna es crucial para análisis de costo y para realizar comparaciones entre productos similares. Los precios están expresados en € e incluyen el IVA.
 
 **url:** Almacena la URL del sitio web donde se puede acceder directamente a la página del producto. Esta información es útil para verificar detalles adicionales del producto.
 
