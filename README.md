@@ -2,11 +2,11 @@
 
 ## Índice
 1. [Motivaciones](#motivaciones)
-2. [Objetivos](#objetivos-)
-3. [Tecnologías](#tecnologías-%EF%B8%8F)
+2. [Objetivos](#objetivos)
+3. [Tecnologías](#tecnologias)
 4. [Descripción de las columnas](#descripcion)
 
-
+<a id="motivaciones"></a>
 # Motivaciones
 
 En el dinámico y competitivo mundo del comercio electrónico, disponer de una base de datos robusta y precisa es fundamental para la toma de decisiones informadas y el desarrollo de estrategias efectivas. Este proyecto se centra en la creación de una base de datos de productos de cerámica, recopilada mediante técnicas de scraping desde diversas tiendas en línea especializadas en cerámica.
@@ -14,6 +14,7 @@ La cerámica, con su rica historia y diversidad de estilos, es un sector que aba
 El proceso de scraping de datos implica la extracción automatizada de información de sitios web, transformando datos no estructurados en un formato utilizable y accesible. Este proyecto utilizará herramientas y técnicas de scraping para recopilar datos de múltiples tiendas de cerámica en línea, asegurando la obtención de información precisa y actualizada. La base de datos resultante contendrá detalles esenciales como nombres de productos, descripciones, precios, materiales, y disponibilidad, entre otros atributos relevantes.
 La implementación de este proyecto proporcionará una herramienta valiosa para minoristas y consumidores interesados en el mercado de la cerámica. Además, permitirá el desarrollo de aplicaciones analíticas y predictivas, aportando valor a través de insights profundos y estrategias basadas en datos. Con este esfuerzo, se busca no solo capturar la riqueza del mundo de la cerámica, sino también abrir nuevas posibilidades de análisis y comercialización en este sector en constante evolución.
 
+<a id="objetivos"></a>
 ## Objetivos 🚀 
 
 1. **Scraping de Datos**: recopilación sistemática de datos de productos de cerámica desde diversas tiendas en línea especializadas. Utilizaremos técnicas de scraping para obtener información detallada sobre los productos disponibles, incluyendo precios, descripciones y otras características relevantes.
@@ -21,6 +22,7 @@ La implementación de este proyecto proporcionará una herramienta valiosa para 
 3. **Creación de la Base de Datos**: los datos limpios y tratados se estructurarán y almacenarán en una base de datos adecuada. Se diseñará un esquema de base de datos eficiente para almacenar información detallada sobre cada producto de cerámica, facilitando su acceso y gestión para futuros análisis y consultas.
 4. **Entrenamiento de IA**:  desarrollar un modelo de inteligencia artificial robusto para realizar predicciones y previsiones de mercado basadas en los datos recopilados. Utilizando técnicas de machine learning y análisis predictivo, se entrenará un modelo que pueda anticipar tendencias y comportamientos en el mercado de productos de cerámica, proporcionando insights valiosos para decisiones estratégicas y comerciales.
 
+<a id="tecnologias"></a>
 ## Tecnologías 🛠️
 
 ### Lenguajes de Programación
@@ -46,6 +48,7 @@ La implementación de este proyecto proporcionará una herramienta valiosa para 
 
 <a id="descripcion"></a>
 ## Descripción de las columnas 💾
+
 **Categoría:** Esta columna incluye el grupo principal en el que se clasifican los productos. Las categorías agrupan productos con características o usos similares, facilitando la organización y búsqueda dentro del conjunto de datos. Ejemplos de categorías podrían ser "Arcillas", "Herramientas", "Equipos", etc. Cada categoría contiene varias subcategorías.
 
 **Subcategoría:** Proporciona un segundo nivel de clasificación dentro de las categorías principales. Las subcategorías ayudan a diferenciar los productos con más precisión. Por ejemplo, dentro de la categoría "Arcillas", las subcategorías podrían ser "Arcilla de baja temperatura" o "Arcilla de alta temperatura".
