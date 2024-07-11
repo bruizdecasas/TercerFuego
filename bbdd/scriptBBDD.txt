@@ -82,5 +82,5 @@ CREATE TABLE `productos_pedido` (
     REFERENCES `productos` (`id_producto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
-);
+)
 ;
