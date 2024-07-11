@@ -68,7 +68,6 @@ CREATE TABLE `productos_pedido` (
   `id_pedido` INT NOT NULL,
   `cantidad` INT NOT NULL,
   `descuento` FLOAT NULL,
-  `total_linea` FLOAT NOT NULL,
   PRIMARY KEY (`id_productos_pedido`),
   INDEX `id_pedido_idx` (`id_pedido` ASC),
   INDEX `id_producto_idx` (`id_producto` ASC),
