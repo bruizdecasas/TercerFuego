@@ -81,3 +81,21 @@ CREATE TABLE `productos_pedido` (
     ON UPDATE NO ACTION
 )
 ;
+
+CREATE VIEW lineas_pedido AS
+SELECT
+    pp.id_pedido AS pedido,
+    p.nombre_producto AS producto,
+    ROUND(p.precio * pp.cantidad, 2) AS precio_linea
+FROM productos p
+JOIN productos_pedido pp
+    ON p.id_producto = pp.id_producto;
+
+CREATE VIEW total_factura AS
+SELECT 
+    pedido,
+    ROUND(SUM(precio_linea) / 1.21, 2) AS base_imponible,
+    ROUND(SUM(precio_linea) / 1.21 * 0.21, 2) AS IVA,
+    ROUND(SUM(precio_linea), 2) AS total_factura
+FROM lineas_pedido 
+GROUP BY pedido;
