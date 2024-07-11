@@ -51,4 +51,36 @@ CREATE TABLE `tercer_fuego`.`productos` (
     REFERENCES `tercer_fuego`.`subcategorias` (`id_subcategorias`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
+CREATE TABLE `pedidos` (
+  `id_pedido` INT NOT NULL AUTO_INCREMENT,
+  `fecha_pedido` DATETIME NOT NULL,
+  `estado` VARCHAR(45) NULL,
+  `gastos_envio` FLOAT NULL,
+  `base_imponible` FLOAT NOT NULL,
+  `IVA` FLOAT NOT NULL,
+  `total` FLOAT NOT NULL,
+  PRIMARY KEY (`id_pedido`)
+)
+
+CREATE TABLE `productos_pedido` (
+  `id_productos_pedido` INT NOT NULL AUTO_INCREMENT,
+  `id_producto` INT NOT NULL,
+  `id_pedido` INT NOT NULL,
+  `cantidad` INT NOT NULL,
+  `descuento` FLOAT NULL,
+  `total_linea` FLOAT NOT NULL,
+  PRIMARY KEY (`id_productos_pedido`),
+  INDEX `id_pedido_idx` (`id_pedido` ASC),
+  INDEX `id_producto_idx` (`id_producto` ASC),
+  CONSTRAINT `fk_pedido`
+    FOREIGN KEY (`id_pedido`)
+    REFERENCES `pedidos` (`id_pedido`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_producto`
+    FOREIGN KEY (`id_producto`)
+    REFERENCES `productos` (`id_producto`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
 ;
