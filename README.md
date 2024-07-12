@@ -35,7 +35,7 @@ La implementación de este proyecto proporcionará una herramienta valiosa para 
 
 **Pandas:** Esencial para la manipulación y análisis de datos en Python. Pandas ofrece estructuras de datos flexibles y herramientas de análisis que facilitan tareas como limpieza de datos, transformaciones y agregaciones.
 
-**Scikit-learn:** Biblioteca fundamental en Python para machine learning. Scikit-learn proporciona herramientas simples y eficientes para el análisis predictivo y la modelización de datos, incluyendo clasificación, regresión, clustering y preprocesamiento de datos.
+**Statsmodels:** es una biblioteca que proporciona clases y funciones para estimar y analizar diversos modelos estadísticos. Está diseñada para complementar a NumPy, SciPy y pandas, extendiendo las capacidades de análisis estadístico y econométrico en Python
 
 ### Herramientas
 **Visual Studio Code:** Entorno de desarrollo integrado (IDE) ampliamente utilizado para programación. Visual Studio Code ofrece características necesarias como resaltado de sintaxis, depuración integrada, control de versiones integrado con Git, extensiones para Python y soporte para Jupyter Notebookss.
